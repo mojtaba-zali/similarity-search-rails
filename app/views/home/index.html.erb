@@ -1,0 +1,52 @@
+<div class="container-fluid bg-search">
+  <div class="bg-search-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Multimedia Retrieval</h1>
+          <p>
+            In this project, a web interface has developed, based on which users are able to browse the
+            available images in the database to reach their intended content. By either uploading an image or clicking
+            on the images below, the browsing process will be initiated.
+          </p>
+          <div class="col-md-12">
+            <%= form_tag '/search/upload', { :multipart => true } do %>
+              <p>
+                <%= file_field_tag 'upload[file]' %>
+              </p>
+              <p>
+                <%= submit_tag "Upload", :class => 'btn btn-upload' %>
+              </p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/search/content?img=tulip/<%=@tulip%>&direct=true">
+          <img src="/image_dataset/tulip/<%=@tulip%>" class="result_img"/>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/search/content?img=rose/<%=@rose%>&direct=true">
+          <img src="/image_dataset/rose/<%=@rose%>" class="result_img"/>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/search/content?img=sunflower/<%=@sunflower%>&direct=true">
+          <img src="/image_dataset/sunflower/<%=@sunflower%>" class="result_img"/>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/search/content?img=daisy/<%=@daisy%>&direct=true">
+          <img src="/image_dataset/daisy/<%=@daisy%>" class="result_img"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

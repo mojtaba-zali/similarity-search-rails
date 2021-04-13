@@ -1,0 +1,36 @@
+<div class="container-fluid bg-search bg-result-search">
+  <div class="bg-search-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="<%= @img_name %>" class="uploaded_img"/>
+        </div>
+        <div class="col-md-7">
+          <p>
+            By clicking on the resulting images, the most 20 similar images will be presented.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <% @results.each do |img| %>
+        <div class="col-md-3">
+          <a href="/search/content?img=<%=img[15..img.length]%>&direct=true">
+            <img src="<%=img%>" class="result_img">
+          </a>
+          <span class="img_class">
+            <%= img.split('/')[2] %>
+          </span>
+          <span class="img_name">
+            <%= img.split('/')[3].split('_')[1] %>
+          </span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

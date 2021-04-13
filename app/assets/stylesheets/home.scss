@@ -1,0 +1,42 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.bg-search {
+  background: image-url('passau.jpg');
+  background-size: cover;
+  padding: 0px !important;
+}
+.bg-search-overlay {
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  min-height: 450px;
+}
+
+.bg-search-overlay h1 {
+  color: white;
+  margin-top: 7%;
+}
+
+.bg-search-overlay p {
+  color: white;
+  line-height: 40px;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+.btn-upload {
+  background-color: #b3ff10 !important;
+  padding: 10px 90px !important;
+}
+
+.bg-search-overlay input[type='file'] {
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+
+.rnd_img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+}

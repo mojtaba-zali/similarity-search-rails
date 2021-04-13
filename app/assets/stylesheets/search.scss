@@ -1,0 +1,52 @@
+// Place all the styles related to the Search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.bg-result-search .bg-search-overlay{
+  min-height: 200px !important;
+}
+
+.bg-result-search .bg-search-overlay h2 {
+  margin-top: 5% !important;
+}
+
+.bg-result-search .bg-search-overlay p {
+  margin-top: 15% !important;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.uploaded_img {
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+
+.result_img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  transition: 300ms all;
+}
+
+.result_img:hover {
+  transform: scale(1.1);
+  transition: 300ms all;
+}
+
+.img_class {
+  font-size: 16px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.img_name {
+  font-style: italic;
+  color: #767676;
+  font-size: 16px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
